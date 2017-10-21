@@ -14,12 +14,13 @@ class Search extends Component{
 
 
 getSearchLink(userinput){
-  
-   axios.put('localhost:3008/test', userinput)
-    .then(response => {
-        this.setState({userResults: response})
-    })
+    let searchLetters = userinput;
+    axios.put('http://localhost:3008/test', `${searchLetters}`).then(response => 
+    
+    this.setState({userResult: response.data.results}));
+    console.log(this.state.userResults);
     }
+    
 
 handleChange(val){
 this.state.searchTerm[0]= val
