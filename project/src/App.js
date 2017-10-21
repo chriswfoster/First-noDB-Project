@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
-//import Search from './components/Search'
+import Search from './components/Search'
 
 import './App.css';
 
@@ -15,9 +15,10 @@ class App extends Component {
       gif4: "",
       gif5: ""
     }
+    this.getImageURL=this.getImageURL.bind(this);
   }
 componentDidMount(){
-  axios.get("http://api.giphy.com/v1/gifs/search?q=tom&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=5")
+  axios.get("http://api.giphy.com/v1/gifs/search?q=poop&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=5")
         .then(response => {
           //console.log(response.data.data[0].id)
           // console.log(this.state.gif1)
@@ -42,10 +43,13 @@ getImageURL(num){
   
     //const firstPic = this.state.gifs.map(cur => (<img src= {("https://giphy.com/gifs/" + "{cur.id}" + "/html5")} alt="" />))
     return (
-      <div>
-        <p className="App"> Search here</p>
+      <div className="background-Color">
+        
 
         <div className="imageFlex"> 
+          <p>SEARCH HERE!!</p>
+          <Search />
+          
       <img src={this.getImageURL(1)} className="imageTile"/>
       <img src={this.getImageURL(2)} className="imageTile"/>
       <img src={this.getImageURL(3)} className="imageTile"/>
