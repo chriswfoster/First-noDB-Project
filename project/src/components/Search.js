@@ -14,8 +14,9 @@ class Search extends Component{
 
 
 getSearchLink(userinput){
-    let searchLetters = userinput;
-    axios.put('http://localhost:3008/test', `${searchLetters}`).then(response => 
+    let val1 = userinput;
+    console.log (val1)
+    axios.put(`http://localhost:3008/${this.props.params.id}`, val1).then(response => 
     
     this.setState({userResult: response.data.results}));
     console.log(this.state.userResults);
@@ -23,8 +24,8 @@ getSearchLink(userinput){
     
 
 handleChange(val){
-this.state.searchTerm[0]= val
-console.log(this.state.searchTerm)
+this.setState({searchTerm: val})
+
 }
 
 problemSolver(){
