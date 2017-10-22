@@ -35,7 +35,8 @@ problemSolver(){
 
 render(){
     return(
-        <div>
+        <div className="searchBox">
+            <p>SEARCH HERE!</p>
             <input className="inputLine" onChange={(e) => this.handleChange(e.target.value)} placeholder="SEARCH DAT GIF"></input>
             
             <button type="submit" onClick={() => this.getSearchLink(this.state.searchTerm)}> Search</button>

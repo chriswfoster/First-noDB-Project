@@ -28,21 +28,90 @@
 }
 
 .imageFlex{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.imageDivider{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    align-content: stretch;
+    align-items: stretch;
+    align-content: space-around;
   }
 
+
 .imageTile{
-border: dashed;
-border-width: 10px;
+border: outset;
+border-width: 5px;
 margin-top: 30px;
-border-color: limegreen;
+border-color: rgba(255, 255, 255, 0.301);
+box-shadow: 10px 10px 5px #000000;
 }
 
 .background-Color { 
-  background-color: blue;
+  background-image: url("./myBg.jpg");
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%
 }
+
+.topLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: stretch;
+}
+.topLeftButton{
+  padding: 10px;
+  border-radius: 500px;
+  font-size: 20px;
+  background-color: rgb(150, 106, 255);
+  margin:10px;
+}
+.topLeftButton:hover{
+background-image: url("./iconsBG.gif");
+padding:30px;
+}
+.giphyButton{
+  background-image: url("./Giphylogo.gif");
+  border-radius: 500px;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 40px;;
+  border-style: outset;
+  border-width: 4px;
+  margin-top: 20px;
+  }
+ 
+
+
+.searchBox{
+border-style: dashed;
+border-color: rgba(255, 255, 255, 0.384);
+background-color: rgba(17, 17, 17, 0.89);
+color: white;
+padding: 10px;
+
+width: 200px;
+}
+
+.navBar
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+    border-bottom-style: outset;
+    box-shadow: 10px 10px 5px #000000;
+    background-image: url("./headerpic.jpg")
+  }
