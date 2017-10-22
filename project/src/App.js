@@ -18,10 +18,8 @@ class App extends Component {
     this.getImageURL=this.getImageURL.bind(this);
   }
 componentDidMount(){
-  axios.get("http://api.giphy.com/v1/gifs/search?q=poop&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10")
+  axios.get("http://api.giphy.com/v1/gifs/search?q=suh+dude&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10")
         .then(response => {
-          //console.log(response.data.data[0].id)
-          // console.log(this.state.gif1)
           this.setState({gif1: "https://i.giphy.com/" + response.data.data[0].id + ".gif"})
           this.setState({gif2: "https://i.giphy.com/" + response.data.data[1].id + ".gif"})
           this.setState({gif3: "https://i.giphy.com/" + response.data.data[2].id + ".gif"})
@@ -55,19 +53,19 @@ getImageURL(num){
 
 <div className="imageDivider">
       <div className="imageFlex"> 
-      <img src={this.getImageURL(1)} className="imageTile"/>
-      <img src={this.getImageURL(2)} className="imageTile"/>
-      <img src={this.getImageURL(3)} className="imageTile"/>
-      <img src={this.getImageURL(4)} className="imageTile"/>
-      <img src={this.getImageURL(5)} className="imageTile"/>
+      <img src={this.getImageURL(1)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(2)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(3)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(4)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(5)} className="imageTile" alt="No pic here yet"/>
       </div>
        
         <div className="imageFlex"> 
-      <img src={this.getImageURL(6)} className="imageTile"/>
-      <img src={this.getImageURL(7)} className="imageTile"/>
-      <img src={this.getImageURL(8)} className="imageTile"/>
-      <img src={this.getImageURL(9)} className="imageTile"/>
-      <img src={this.getImageURL(10)} className="imageTile"/>
+      <img src={this.getImageURL(6)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(7)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(8)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(9)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(10)} className="imageTile" alt="No pic here yet"/>
         </div>
 </div>   
         

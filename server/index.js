@@ -18,7 +18,8 @@ const baseURL = "/test"
 
 app.get(baseURL, gc.read) 
 app.post(baseURL, gc.create)
-
+app.put(`${baseURL}/:id`, gc.update)
+app.delete(`${baseURL}/:id`, gc.delete)
 
 
 

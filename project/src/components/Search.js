@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
+
+
+
+
 class Search extends Component{
     constructor(){
         super()
             this.state = {
-                searchTerm: [],
+                searchTerm: ["test"],
                 userResults: '',
                 baseUrl: 'http://api.giphy.com/v1/gifs/search?q=',
                 api_key:`&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=5`
@@ -14,9 +18,9 @@ class Search extends Component{
 
 
 getSearchLink(userinput){
-    let val1 = userinput;
-    console.log (val1)
-    axios.put(`http://localhost:3008/${this.props.params.id}`, val1).then(response => 
+
+
+    axios.post(`localhost:3008/test`, this.state.searchTerm).then(response => 
     
     this.setState({userResult: response.data.results}));
     console.log(this.state.userResults);

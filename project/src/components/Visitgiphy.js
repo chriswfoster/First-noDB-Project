@@ -6,8 +6,7 @@ export default class Visitgiphy extends Component{
 constructor(){
     super()
     this.state ={
-        color: "",
-        finalColor: "red"
+        color: ""
     }
 }
 
@@ -19,7 +18,7 @@ render(){
 <div>
 
     <div className="topLeft">
-        <a href="https://giphy.com/" className="giphyButton"></a>
+        <a href="https://giphy.com/" className="giphyButton"> </a>
     </div>
 
 

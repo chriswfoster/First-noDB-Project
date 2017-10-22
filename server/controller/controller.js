@@ -7,15 +7,31 @@ const searchingFor = []
 module.exports = {
     create:(req, res) =>{
     // var yay = req.query.val1
-    //  searchingFor.push(yay)
+   searchingFor= req.body.id;
     //   console.log(yay)
-res.status(200).send(`${base}${req.query.val1}${theKey}`)
+res.status(200).send(`${searchingFor}`)
 
 },
     read: (req, res) => {
         var yay = req.query.val1
-        searchingFor.push(yay)
-         console.log(yay)
-res.status(200).send(`${base}${searchingFor}${theKey}`)
+  res.status(200).send(searchingFor)
+},
+
+update: (req, res) => {
+const{text} = req.body;
+const updateID=req.params.id;
+searchingFor.push(req.text);
+searchingFor.push(req.id)
+res.status(200).send(searchingFor)
+},
+
+delete: (req, res) => {
+    
+    res.status(200).send(messages)
 }
+
+
 }
+
+
+//`${base}${searchingFor}${theKey}`
