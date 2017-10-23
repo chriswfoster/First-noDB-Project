@@ -9,32 +9,24 @@ class Search extends Component{
     constructor(){
         super()
             this.state = {
-                searchTerm: ["test"],
-                userResults: '',
-                baseUrl: 'http://api.giphy.com/v1/gifs/search?q=',
-                api_key:`&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=5`
+                searchTerm: '',
+                userResults: ''
             }
-    }
+    this.getSearchLink = this.getSearchLink.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+        }
 
 
 getSearchLink(userinput){
-
-
-    axios.post(`localhost:3008/test`, this.state.searchTerm).then(response => 
-    
-    this.setState({userResult: response.data.results}));
-    console.log(this.state.userResults);
-    }
-    
+    axios.get(`http://localhost:3008/api/data?q=${this.state.searchTerm}`).then(response => {
+    //  this.setState({userResults: response.data.data}),
+     console.log(this.props.answer)})
+}
 
 handleChange(val){
 this.setState({searchTerm: val})
-
 }
 
-problemSolver(){
-
-}
 
 
 render(){

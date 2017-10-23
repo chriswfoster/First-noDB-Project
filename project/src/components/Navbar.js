@@ -19,7 +19,7 @@ render(){
 <div>
 
     <div className="topLeft">
-    <a href="https://codepen.io/chriswf/full/BwJVrm/" className="topLeftButton">Draw Tool</a>
+    <a href="https://codepen.io/chriswf/full/BwJVrm/" className="topLeftButton infinite-spinning">Draw Tool</a>
         <a href="https://codepen.io/chriswf/full/dVJjBK/" className="topLeftButton">Draw 2.0</a>
     
     
