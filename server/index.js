@@ -8,7 +8,7 @@ axios = require('axios')
 
 
 var app = express();
-
+app.use(cors())
 app.use(json());
 app.use("/", express.static(__dirname + '/public'))
 
