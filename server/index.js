@@ -13,7 +13,7 @@ app.use(json());
 app.use("/", express.static(__dirname + '/public'))
 
 const base = "http://api.giphy.com/v1/gifs/search?q="
-const theKey = "&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=5"
+const theKey = "&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10"
 const searchingFor = []
 const baseURL = "/api/data"
 

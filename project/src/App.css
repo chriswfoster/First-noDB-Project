@@ -128,6 +128,14 @@ perspective: 1000px;
     border-radius: 10px;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.658), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
     font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    margin-top: 15px;
 }
 input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
@@ -215,4 +223,13 @@ input[type=text]:focus, textarea:focus {
 .fa-google {
   background: #dd4b39;
   color: white;
+}
+
+.centerIt{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
