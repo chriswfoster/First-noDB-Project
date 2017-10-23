@@ -20,7 +20,7 @@ class Search extends Component{
 
 
 getSearchLink(userinput){
-    axios.get(`http://127.0.0.1:3008/api/data?q=${this.state.searchTerm}`).then(response => {
+    axios.get(`http://localhost:3008/api/data?q=${this.state.searchTerm}`).then(response => {
      this.addThem(response.data.data)
     })
 }
