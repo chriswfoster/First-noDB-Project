@@ -57,11 +57,11 @@ render(){
             </div>
         <div className="imageDivider">
       <div className="imageFlex"> 
-      <img src={this.getImageURL(1)} className="imageTile" alt="No pic here yet"/>
-      <img src={this.getImageURL(2)} className="imageTile" alt="No pic here yet"/>
-      <img src={this.getImageURL(3)} className="imageTile" alt="No pic here yet"/>
-      <img src={this.getImageURL(4)} className="imageTile" alt="No pic here yet"/>
-      <img src={this.getImageURL(5)} className="imageTile" alt="No pic here yet"/>
+      <img src={this.getImageURL(1)} className="imageTile" alt="Search for pics!"/>
+      <img src={this.getImageURL(2)} className="imageTile" alt="Search for pics!"/>
+      <img src={this.getImageURL(3)} className="imageTile" alt="Search for pics!"/>
+      <img src={this.getImageURL(4)} className="imageTile" alt="Search for pics!"/>
+      <img src={this.getImageURL(5)} className="imageTile" alt="Search for pics!"/>
       </div>
        
         <div className="imageFlex"> 
