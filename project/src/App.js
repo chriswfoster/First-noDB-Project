@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Topsection from './components/MainPage/Topsection'
 import Nav from './components/MainPage/Nav'
 import './App.css';
+import router from './router'
 
 
 
@@ -23,8 +24,10 @@ class App extends Component {
     return (
    
     <div>
-    
+    <div>
       <Nav />
+      {router}
+      </div>
       <Topsection />
 
        </div>

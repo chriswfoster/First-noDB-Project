@@ -1,8 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import { BrowserRouter } from "react-router-dom";
+
+import "./index.css";
+import GiphyMain from './components/giphy/GiphyMain'
+
+
+import App from "./App";
+
+ReactDOM.render(
+  <BrowserRouter>
+
+      <App />
+    
+  </BrowserRouter>,
+  document.getElementById( "root" )
+);
