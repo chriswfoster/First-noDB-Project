@@ -20,7 +20,7 @@ class Search extends Component{
 
 
 getSearchLink(userinput){
-    axios.get(`api/data?q=${this.state.searchTerm}`).then(response => {
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${this.state.searchTerm}&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10`).then(response => {
      this.addThem(response.data.data)
     })
 }
