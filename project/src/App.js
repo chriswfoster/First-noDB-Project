@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 // import axios from "axios";
-import Search from './components/Search'
-import Navbar from './components/Navbar'
-import Visitgiphy from './components/Visitgiphy'
-import Bottombar from './components/Bottombar'
-import './myBg.jpg'
 
+import Topsection from './components/MainPage/Topsection'
+import Nav from './components/MainPage/Nav'
 import './App.css';
+
+
 
 class App extends Component {
   constructor(props){
@@ -22,17 +21,17 @@ class App extends Component {
   render() {
   
     return (
-      <div className="background-Color">
-      
-        <div className="navBar">
-        <Navbar />
-        <Visitgiphy />
-        
-        </div>
-        <Search />
-        <Bottombar />
+   
+    <div>
+    
+      <Nav />
+      <Topsection />
 
-      </div>
+       </div>
+        
+        
+
+      
     );
   }
 }
