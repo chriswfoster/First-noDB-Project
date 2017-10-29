@@ -5,13 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
 import GiphyMain from './components/giphy/GiphyMain'
-
+import Topsection from './components/MainPage/Topsection'
 
 import App from "./App";
 
 ReactDOM.render(
   <BrowserRouter>
-
+      
       <App />
     
   </BrowserRouter>,

@@ -17,19 +17,19 @@ class App extends Component {
     }
   }
 
-  
-
   render() {
   
     return (
    
     <div>
     <div>
+    
+
       <Nav />
       {router}
+      
       </div>
-      <Topsection />
-
+       
        </div>
         
         
