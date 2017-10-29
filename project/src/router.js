@@ -8,7 +8,7 @@ import GiphyMain from './components/giphy/GiphyMain.js';
 
 export default (
   <Switch>
-    <Route component={ App } path="/" exact />
+    <Route component={ App } exact path="/"/>
     <Route component={ GiphyMain } path="/GiphyMain" /> 
     
   </Switch>
